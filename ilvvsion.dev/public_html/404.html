@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSE 135</title>
+  <link rel="icon" href="favicon.ico">
+  <!--CSS-->
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <section class="grid-container">
+    <div class="grid-item">
+      <h1><a href="index.html">CSE 135</a></h1>
+      <h2>Spring 2022</h2>
+      <script>
+        document.write(`Live @ ${new Date()}`);
+      </script>
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item">
+      <div>
+        <h1>Team</a></h1>
+        <h4>Members</h4>
+        <ul>
+          <li>
+            <a href="/members/ivan.html">Ivan Luu</a>
+          </li>
+          <li>
+            <a href="/members/jonathan.html">Jonathan Moon</a>
+          </li>
+          <li>
+            <a href="/members/kody.html">Kody Xu</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="hmwk">
+    <h2>Homework 1</h2>
+    <ul>
+      <li><a href="hello.php">PHP</a></li>
+      <li><a href="hello.php">Node</a></li>
+    </ul>
+  </section>
+  <?php include 'hello.php';?>
+</body>
+
+</html>
