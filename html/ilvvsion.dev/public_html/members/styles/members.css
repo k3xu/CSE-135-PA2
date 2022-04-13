@@ -1,0 +1,17 @@
+body {
+    background-color: #313e4f;
+    color: white;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+h2 {
+    margin-top: 0;
+}
+a {
+    color: #ff788a;
+    text-decoration: none;
+}
