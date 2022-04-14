@@ -16,7 +16,7 @@
 ## Github Auto Deploy Setup
 
 We used Github hooks to to deploy from Github. This was done by setting up a repository. Our .git
-directory is located at '/var/www'. After this was done we edited the  post-commit file with
+directory is located at '/var/www'. After this was done we edited the  post-commit file with:
 
     #!/bin/bash
     unset GIT_INDEX_FILE
