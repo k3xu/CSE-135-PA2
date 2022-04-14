@@ -16,12 +16,13 @@
 ## Github Auto Deploy Setup
 
 We used Github hooks to to deploy from Github. This was done by setting up a repository. Our .git
-directory is located at '/var/www'. After this was done we edited the  post-commit file with:
+directory is located at '/var/www'. We then edited the post-commit file with:
 
     #!/bin/bash
     unset GIT_INDEX_FILE
     git --work-tree=/var/www/html --git-dir=$HOME/proj/.git checkout -f
 
+After doing so, we are now able to auto deploy from Github.
 
 ## Username/password info for logging into the site
 **Site username:** grader
