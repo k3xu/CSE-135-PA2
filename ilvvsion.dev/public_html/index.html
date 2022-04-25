@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <title>CSE 135</title>
   <link rel="icon" href="favicon.ico">
   <!--CSS-->
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" type="text/css" href="styles/index.css?version=4" />
 </head>
 
 <body>
@@ -22,7 +23,7 @@
     <div class="grid-item"></div>
     <div class="grid-item">
       <div>
-        <h1>Team</h1>
+        <h1>Team IJK</h1>
         <h4>Members</h4>
         <ul>
           <li>
@@ -39,12 +40,114 @@
     </div>
   </section>
   <section id="hmwk">
-    <h2>Homework 1</h2>
-    <ul>
-      <li><a href="hw1/hello.php">PHP</a></li>
-      <li><a href="hw1/report.html">GoAccess Report</a></li>
-    </ul>
-  </section>
-</body>
 
+    <h2>Homework 1</h2>
+    <div class="hwContainer" style="padding: 5px 0px 5px 20px;">
+      <ul>
+        <li><a href="hw1/hello.php">PHP</a></li>
+        <li><a href="hw1/report.html">GoAccess Report</a></li>
+      </ul>
+    </div>
+
+    <h2>Homework 2</h2>
+      <div class="hwContainer">
+        <div class="codeContainer">
+          <div class="codePage">
+            <h3>Perl</h3>
+            <ul>
+              <li><a href="cgi-bin/Perl/perl-html-world.pl">Hello, Perl!</a></li>
+              <li><a href="cgi-bin/Perl/perl-json-world.pl">Hello, Perl! (JSON)</a></li>
+              <li><a href="cgi-bin/Perl/perl-env.pl">Environment Variables (Manually)</a></li>
+              <li><a href="cgi-bin/Perl/perl-env-pm.pl">Environment Variables (CGI.pm)</a></li>
+              <li><a href="cgi-bin/Perl/perl-get-echo.pl">GET Echo</a></li>
+              <li><a href="cgi-bin/Perl/perl-post-echo.pl">POST Echo</a></li>
+              <li><a href="cgi-bin/Perl/perl-general-echo.pl">General Echo</a></li>
+              <li><a href="perl-cgiform.html">Sessioning</a></li>
+            </ul>
+          </div>
+          <div class="codePage">
+            <h3>C</h3>
+            <ul>
+              <li><a href="cgi-bin/C/c-hello-html-world.cgi">Hello, C!</a></li>
+              <li><a href="cgi-bin/C/c-hello-json-world.cgi">Hello, C! (JSON)</a></li>
+              <li><a href="cgi-bin/C/c-env.cgi">Environment Variables</a></li>
+              <li><a href="cgi-bin/C/c-get-echo.cgi">GET Echo</a></li>
+              <li><a href="cgi-bin/C/c-post-echo.cgi">POST Echo</a></li>
+              <li><a href="cgi-bin/C/c-general-request-echo.cgi">General Echo</a></li>
+              <li><a href="c-cgiform.html">Sessioning</a></li>
+            </ul>
+          </div>
+          <div class="codePage">
+            <h3>PHP</h3>
+            <ul>
+              <li><a href="cgi-bin/PHP/php-hello-html-world.php">Hello, PHP!</a></li>
+              <li><a href="cgi-bin/PHP/php-hello-json-world.php">Hello, PHP! (JSON)</a></li>
+              <li><a href="cgi-bin/PHP/php-env.php">Environment Variables</a></li>
+              <li><a href="cgi-bin/PHP/php-get-echo.php">GET Echo</a></li>
+              <li><a href="cgi-bin/PHP/php-post-echo.php">POST Echo</a></li>
+              <li><a href="cgi-bin/PHP/php-general-request-echo.php">General Echo</a></li>
+              <li><a href="php-cgiform.html">Sessioning</a></li>
+            </ul>
+          </div>
+          <div class="codePage">
+            <h3>Python</h3>
+              <li><a href="cgi-bin/Python/py-hello-html-world.py">Hello, Python!</a></li>
+              <li><a href="cgi-bin/Python/py-hello-json-world.py">Hello, Python! (JSON)</a></li>
+              <li><a href="cgi-bin/Python/py-env.py">Environment Variables</a></li>
+              <li><a href="cgi-bin/Python/py-get-echo.py">GET Echo</a></li>
+              <li><a href="cgi-bin/Python/py-post-echo.py">POST Echo</a></li>
+              <li><a href="cgi-bin/Python/py-general-request-echo.py">General Echo</a></li>
+              <li><a href="py-cgiform.html">Sessioning</a></li>
+            </ul>
+          </div>
+          <div class="codePage">
+            <h3>Ruby</h3>
+              <li><a href="cgi-bin/Ruby/ruby-hello-html-world.rb">Hello, Ruby!</a></li>
+              <li><a href="cgi-bin/Ruby/ruby-hello-json-world.rb">Hello, Ruby! (JSON)</a></li>
+              <li><a href="cgi-bin/Ruby/ruby-env.rb">Environment Variables</a></li>
+              <li><a href="cgi-bin/Ruby/ruby-get-echo.rb">GET Echo</a></li>
+              <li><a href="cgi-bin/Ruby/ruby-post-echo.rb">POST Echo</a></li>
+              <li><a href="cgi-bin/Ruby/ruby-general-request-echo.rb">General Echo</a></li>
+              <li><a href="py-cgiform.html">Sessioning</a></li>
+            </ul>
+          </div>
+      </div>
+      <hr style="margin-left: -5px; width: 99%;">
+      <div>
+        <h3>HTTP Request Tester</h3>
+        <form name ="form1" onSubmit="actionOnSubmit()" method="post" target="_blank">
+  
+          <select id="formchoice" name="formchoice">
+            <option value="https://ilvvsion.dev/cgi-bin/Perl/perl-get-echo.pl">Perl GET</option>
+            <option value="https://ilvvsion.dev/cgi-bin/Perl/perl-post-echo.pl">Perl POST</option>
+            <option value="https://ilvvsion.dev/cgi-bin/C/c-get-echo.cgi">C GET</option>
+            <option value="https://ilvvsion.dev/cgi-bin/C/c-post-echo.cgi">C POST</option>
+            <option value="https://ilvvsion.dev/cgi-bin/PHP/php-get-echo.php">PHP GET</option>
+            <option value="https://ilvvsion.dev/cgi-bin/PHP/php-post-echo.php">PHP POST</option>
+            <option value="https://ilvvsion.dev/cgi-bin/Python/py-get-echo.py">Python GET</option>
+            <option value="https://ilvvsion.dev/cgi-bin/Python/py-post-echo.py">Python POST</option>
+            <option value="https://ilvvsion.dev/cgi-bin/Ruby/ruby-get-echo.rb">Ruby GET</option>
+            <option value="https://ilvvsion.dev/cgi-bin/Ruby/ruby-post-echo.rb">Ruby POST</option>
+          </select>
+          <input type="text" name="input" placeholder="value">
+          <input type="submit" class="button">
+          </form>
+      </div>
+    </div>
+
+        <script>
+          function actionOnSubmit(){
+            var e = document.getElementById("formchoice");
+            var formaction = e.options[e.selectedIndex].value;
+            if (formaction === "https://ilvvsion.dev/cgi-bin/PHP/php-get-echo.php" ||
+                formaction === "https://ilvvsion.dev/cgi-bin/Perl/perl-get-echo.pl" ||
+                formaction === "https://ilvvsion.dev/cgi-bin/C/c-get-echo.cgi" ||
+                formaction === "https://ilvvsion.dev/cgi-bin/Python/python-get-echo.py" ||
+                formaction === "https://ilvvsion.dev/cgi-bin/Ruby/ruby-get-echo.rb"
+            ) {
+              formaction = formaction + "?test1=nou&test2=hello";
+            }  
+            document.form1.action = formaction;
+          }
+        </script>
 </html>
